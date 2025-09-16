@@ -1,4 +1,4 @@
-package TBD;
+package math;
 
 class DoesAliceWin_3227 {
     public boolean doesAliceWin(String s) {
