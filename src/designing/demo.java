@@ -22,8 +22,11 @@ public class demo {
         System.out.println(taskManager.execTop()); // return 5. Executes task 105 for User 5.
         System.out.println("[null,null,null,2,null,null,50]");*/
 
-        List<List<Integer>> tasks = List.of(List.of(3, 12, 11), List.of(6, 2, 46), List.of(2, 1, 46), List.of(5, 23, 21));
+        /*List<List<Integer>> tasks = List.of(List.of(3, 12, 11), List.of(6, 2, 46), List.of(2, 1, 46), List.of(5, 23, 21));
         TaskManager_1 taskManager = new TaskManager_1(tasks);
-        System.out.println(taskManager.execTop()); // return 3. Executes task 103 for User 3.
+        System.out.println(taskManager.execTop()); // return 3. Executes task 103 for User 3.*/
+
+        Spreadsheet spreadsheet = new Spreadsheet(458);
+        System.out.println(spreadsheet.getValue("=O126+10272"));
     }
 }
