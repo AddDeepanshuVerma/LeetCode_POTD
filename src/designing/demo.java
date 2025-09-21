@@ -1,6 +1,6 @@
 package designing;
 
-import java.util.List;
+import java.util.Arrays;
 
 public class demo {
     public static void main(String[] args) {
@@ -26,7 +26,13 @@ public class demo {
         TaskManager_1 taskManager = new TaskManager_1(tasks);
         System.out.println(taskManager.execTop()); // return 3. Executes task 103 for User 3.*/
 
-        Spreadsheet spreadsheet = new Spreadsheet(458);
-        System.out.println(spreadsheet.getValue("=O126+10272"));
+        /*Spreadsheet spreadsheet = new Spreadsheet(458);
+        System.out.println(spreadsheet.getValue("=O126+10272"));*/
+
+        Router router = new Router(4);
+        System.out.println(router.addPacket(5, 3, 6));
+        System.out.println(router.addPacket(2, 3, 6));
+        System.out.println(Arrays.toString(router.forwardPacket()));
+        System.out.println(router.getCount(3, 3, 5));
     }
 }
