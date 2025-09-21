@@ -29,4 +29,4 @@ bin/
 .DS_Store
 
 ### custom file ###
-*.xml
+project.xml
