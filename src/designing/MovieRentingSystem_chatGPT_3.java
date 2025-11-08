@@ -19,7 +19,25 @@ class MovieRentingSystem_chatGPT_3 {
             shopMap.computeIfAbsent(shop, k -> new HashMap<>()).put(movie, item);
         }
     }
+    class Solution {
+        public int maxFrequencyElements(int[] nums) {
+            int[] freq = new int[101];
+            int max = 0, count = 0;
 
+
+            for (int num : nums) {
+                int temp = freq[num]++;
+                if(temp > max) {
+                    max = temp;
+                    count = temp;
+                } else if (temp == max) {
+                    count += temp;
+                }
+            }
+
+            return count;
+        }
+    }
     public void rent(int shop, int movie) {
         Item item = shopMap.get(shop).get(movie);
         unRentedMovies.get(movie).remove(item);
